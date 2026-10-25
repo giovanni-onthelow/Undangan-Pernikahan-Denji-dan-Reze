@@ -241,8 +241,8 @@ function addWish(name, attendance, guests, message) {
 
   const avatar = name.charAt(0).toUpperCase();
   const attendanceLabel = attendance === 'hadir'
-    ? `✅ Hadir • ${guests} orang`
-    : '❌ Tidak Hadir';
+    ? `Hadir • ${guests} orang`
+    : 'Tidak Hadir';
 
   const wishEl = document.createElement('div');
   wishEl.className = 'wish-item';
